@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfGestionDeCitas", "WpfGestionDeCitas\WpfGestionDeCitas.csproj", "{9FBDAB10-68C4-41C9-8A4C-8213551296E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FBDAB10-68C4-41C9-8A4C-8213551296E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBDAB10-68C4-41C9-8A4C-8213551296E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBDAB10-68C4-41C9-8A4C-8213551296E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBDAB10-68C4-41C9-8A4C-8213551296E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCA91054-6232-43D9-B18A-62828165D563}
+	EndGlobalSection
+EndGlobal

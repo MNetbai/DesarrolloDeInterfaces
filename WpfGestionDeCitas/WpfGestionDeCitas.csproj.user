@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CancelarCita.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClaseCita.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ClasePaciente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ModificarCita.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ModificarPaciente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NuevaCita.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NuevoPaciente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaPaciente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CancelarCita.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClaseCita.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ClasePaciente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ModificarCita.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ModificarPaciente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NuevaCita.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NuevoPaciente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VentanaPaciente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

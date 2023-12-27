@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfGestionDeCitas.ClasePaciente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Paciente" Height="461" Width="255">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/PROGRAMACIÓN.png"/>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="261" Margin="98,-50,0,0" VerticalAlignment="Top" Width="261" Source="/PROGRAMACIÓN (1)-PhotoRoom.png-PhotoRoom.png"/>
+        <Button Content="NUEVO PACIENTE" HorizontalAlignment="Center" Margin="0,163,0,0" VerticalAlignment="Top" Height="37" Width="146" Foreground="White" FontFamily="Segoe UI Variable Small Semibold" FontWeight="Bold" Click="NuevoPaciente_Click" FontSize="14" BorderBrush="{x:Null}">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0D7276" Offset="0.854"/>
+                    <GradientStop Color="#FFB8F3F3" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="MODIFICAR PACIENTE" HorizontalAlignment="Center" Margin="0,211,0,0" VerticalAlignment="Top" Height="37" Width="161" Foreground="White" FontFamily="Segoe UI Variable Small Semibold" FontWeight="Bold" Click="ModificarPaciente_Click" FontSize="14" BorderBrush="{x:Null}">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0D7276" Offset="0.854"/>
+                    <GradientStop Color="#FFB8F3F3" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

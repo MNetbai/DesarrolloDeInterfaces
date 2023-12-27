@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfGestionDeCitas.NuevaCita"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGestionDeCitas"
+        mc:Ignorable="d"
+        Title="Nueva Cita" Height="464" Width="662">
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="662">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0D7276" Offset="0.854"/>
+                    <GradientStop Color="#FFB8F3F3" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="Nueva Cita" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="White" FontFamily="Segoe UI Variable Small Semibold"/>
+        <Label Content="Espacialidad:" HorizontalAlignment="Left" Margin="16,59,0,0" VerticalAlignment="Top" Foreground="Black" FontStyle="Italic" FontSize="14"/>
+        <ComboBox HorizontalAlignment="Left" Name="cmbEspecialidad" Margin="15,89,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbEspecialidad_SelectionChanged"/>
+        <Label Content="Médico:" HorizontalAlignment="Left" Margin="17,117,0,0" VerticalAlignment="Top" Foreground="Black" FontStyle="Italic" FontSize="14"/>
+        <ComboBox HorizontalAlignment="Left" Name="cmbMedico" Margin="16,147,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbMedico_SelectionChanged"/>
+        <Button Content="BUSCAR" Name="btnBuscar" HorizontalAlignment="Left" Margin="17,254,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="{x:Null}" FontFamily="Segoe UI Variable Display Semibold" FontWeight="Bold" Height="29" Width="86" Click="btnBuscar_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0D7276" Offset="0.854"/>
+                    <GradientStop Color="#FFB8F3F3" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <DatePicker Name="fechaDatePicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,331,0,0" Width="200" FontWeight="Bold" FontFamily="Segoe UI Semibold" SelectedDateChanged="fechaDatePicker_SelectedDateChanged"/>
+        <ComboBox Name="cmbHoraCita" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,393,0,0" Width="94" SelectionChanged="cmbHoraCita_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Name="txtDniApellidos" Margin="17,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="25" RenderTransformOrigin="0.857,1.362"/>
+        <Label Content="Fecha de la cita:" HorizontalAlignment="Left" Margin="14,301,0,0" VerticalAlignment="Top" Foreground="Black" Width="172" FontStyle="Italic" FontSize="14"/>
+        <DataGrid x:Name="dataGridDatosPaciente" AutoGenerateColumns="True" Margin="233,63,20,142" SelectionChanged="dataGridDatosPaciente_SelectionChanged"/>
+        <Label Content="Dni o Apellidos del paciente:" HorizontalAlignment="Left" Margin="12,187,0,0" VerticalAlignment="Top" FontStyle="Italic" FontSize="14" Width="184" RenderTransformOrigin="0.481,0.877"/>
+        <Label Content="Hora de la cita:" HorizontalAlignment="Left" Margin="17,364,0,0" VerticalAlignment="Top" FontStyle="Italic" FontSize="14"/>
+        <Button Content="ACEPTAR CITA" x:Name="btnCrearCita" HorizontalAlignment="Left" Margin="361,358,0,0" VerticalAlignment="Top" Foreground="White" BorderBrush="{x:Null}" FontFamily="Segoe UI Variable Display Semibold" FontWeight="Bold" Height="42" Width="153" FontSize="14" Click="btnCrearCita_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0D7276" Offset="0.854"/>
+                    <GradientStop Color="#FFB8F3F3" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
